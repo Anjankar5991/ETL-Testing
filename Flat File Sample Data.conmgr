@@ -1,0 +1,53 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="Flat File Sample Data"
+  DTS:DTSID="{2934531C-F902-4239-B8C2-E1E80F79C23C}"
+  DTS:CreationName="FLATFILE">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:Format="Delimited"
+      DTS:LocaleID="16393"
+      DTS:HeaderRowDelimiter="_x000D__x000A_"
+      DTS:ColumnNamesInFirstDataRow="True"
+      DTS:RowDelimiter=""
+      DTS:TextQualifier="_x003C_none_x003E_"
+      DTS:CodePage="1252"
+      DTS:ConnectionString="D:\sql down 2022\SampleCurrencyData.txt">
+      <DTS:FlatFileColumns>
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x0009_"
+          DTS:DataType="4"
+          DTS:TextQualified="True"
+          DTS:ObjectName="AverageRate"
+          DTS:DTSID="{8633E9A1-BBBE-4700-8E0C-F9C2F4CBEC83}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x0009_"
+          DTS:MaximumWidth="3"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="CurrencyID"
+          DTS:DTSID="{FB12FC2B-7CD6-4941-98DD-F8F0300B9CB6}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x0009_"
+          DTS:DataType="7"
+          DTS:TextQualified="True"
+          DTS:ObjectName="CurrencyDate"
+          DTS:DTSID="{22052CA5-3050-4731-A705-E86A470459FB}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x000D__x000A_"
+          DTS:DataType="4"
+          DTS:TextQualified="True"
+          DTS:ObjectName="EndofDayRate"
+          DTS:DTSID="{2BEA4F63-4FFE-42A7-A8FF-FD288E1C9AB4}"
+          DTS:CreationName="" />
+      </DTS:FlatFileColumns>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
